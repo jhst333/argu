@@ -22,14 +22,14 @@
  endif()
 
 #//: argu_example [RELEASE]
- add_executable             (argu_example source/main.cc)
+ add_executable             (argu_example test/main.cc)
  target_include_directories (argu_example PUBLIC include/)
  target_compile_options     (argu_example PUBLIC -Wall -Wextra -std=c++11 -fPIC -Ofast)
  target_link_libraries      (argu_example LINK_PUBLIC argu)
 
 #//: argu_example_debug [DEBUG]
  if (Boost_UNIT_TEST_FRAMEWORK_FOUND)
-  add_executable             (argu_example_debug source/main.cc)
+  add_executable             (argu_example_debug test/main.cc)
   target_include_directories (argu_example_debug PUBLIC include/)
   target_compile_options     (argu_example_debug PUBLIC -Wall -Wextra -std=c++11 -g -DDEBUG)
   target_link_libraries      (argu_example_debug LINK_PUBLIC argu_debug)
