@@ -45,3 +45,4 @@
 
 INSTALL (FILES include/argu.hpp DESTINATION include)
 INSTALL_TARGETS (/lib argu)
+ 
