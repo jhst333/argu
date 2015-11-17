@@ -72,3 +72,15 @@ This is valid definition of simple validator:
      bool my_validator(const std::string& _string)
      { if (_string.length() == 46) return true;
        return false; }
+       
+
+##Compilation
+
+    cd argu/
+    mkdir build/
+    cd build/ 
+    cmake ..
+    make
+    sudo make install
+
+
