@@ -75,12 +75,12 @@ This is valid definition of simple validator:
        
 
 ##Compilation
+CMake >= 2.6 and development files for *boost_regex* library are required in order to compile this library.
 
-    cd argu/
-    mkdir build/
-    cd build/ 
-    cmake ..
-    make
-    sudo make install
-
+     cd argu/
+     mkdir build/
+     cd build/ 
+     cmake ..
+     make
+     sudo make install
 
