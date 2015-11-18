@@ -77,6 +77,7 @@ This is valid definition of simple validator:
 ##Compilation
 CMake >= 2.6 and development files for *boost_regex* library are required in order to compile this library.
 
+     git clone https://github.com/jhst333/argu.git
      cd argu/
      mkdir build/
      cd build/ 
