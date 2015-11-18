@@ -260,7 +260,7 @@ namespace argu
    namespace debug
    { argument_pair_t convert(const argument_chain_t& _chain) throw (std::runtime_error)
      { uint32_t size = _chain.size();
-       if (!size) reporting::throw_("[DEBUG {Argu.cc:264}] Empty argument chain.");
+       if (!size) reporting::throw_("[DEBUG {Argu.cc:263}] Empty argument chain.");
        argument_pair_t argument_pair;
        argument_pair.first = size;
        argument_pair.second = new char* [size];
@@ -273,9 +273,9 @@ namespace argu
 
      void deallocate(argument_pair_t& _argument_pair) throw (std::runtime_error)
      { if (!_argument_pair.second)
-        reporting::throw_("[DEBUG {Argu.cc:277}] Non-allocated argument pair.");
+        reporting::throw_("[DEBUG {Argu.cc:276}] Non-allocated argument pair.");
        for (uint32_t index = 0; index < static_cast<uint32_t>(_argument_pair.first); ++index)
-       { if (!_argument_pair.second[index]) reporting::throw_("[DEBUG {Argu.cc:279}] Invalid string.");
+       { if (!_argument_pair.second[index]) reporting::throw_("[DEBUG {Argu.cc:278}] Invalid string.");
          delete [] _argument_pair.second[index];
          _argument_pair.second[index] = nullptr; }
        delete [] _argument_pair.second;
